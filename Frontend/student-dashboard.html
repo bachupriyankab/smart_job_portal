@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Job Portal - Dashboard</title>
+    <link rel="stylesheet" href="student-dashboard.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Smart Job Portal</h1>
+        <div class="welcome-center">
+        <span id="welcomeText"></span>
+    </div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+       
+    </div>
+
+    <!-- Dashboard Boxes -->
+    <div class="dashboard-container">
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Apply Jobs</h3>
+            <p>Search and apply for jobs that match your skills and interests.</p>
+            <button onclick="goToJobs()">Access Now</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>My Applications</h3>
+            <p>View the jobs you have applied and track application status.</p>
+            <button onclick="goToApplications()">Access Now</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">📝</div>
+            <h3>Assessments</h3>
+            <p>Attend assessments and improve your technical skills.</p>
+            <button class="disabled">Coming Soon</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">👤</div>
+            <h3>My Profile</h3>
+            <p>Update your profile, skills, education and personal details.</p>
+            <button onclick="goToProfile()">Access Now</button>
+        </div>
+
+    </div>
+
+<script src="student-dashboard.js"></script>
+</body>
+</html>

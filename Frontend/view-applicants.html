@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Applicants</title>
+    <link rel="stylesheet" href="view-applicants.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">Smart Job Portal</div>
+
+    <div class="nav-center">
+        <span id="welcomeText"></span>
+    </div>
+
+    <div class="nav-right">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="page-header">
+    <h1>Applications</h1>
+   <button  type ="button" class="back-btn" onclick="goBack()">Back</button> 
+   
+</div>
+<!-- APPLICANTS LIST -->
+<div class="jobs-container" id="applicationsContainer"></div>
+
+<script src="view-applications.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <h2>Smart Job Portal</h2>
+    </div>
+
+    <div class="nav-center">
+        <span id="welcomeText">Welcome </span>
+    </div>
+
+    <div class="nav-right">
+        <button  class = "logout-btn" onclick ="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Post a Job</h2>
+
+    <form id="jobForm">
+        <input type="text" id="role" placeholder="Job Role" required>
+        <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+        <input type="number" id="vacancies" placeholder="Vacancies" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="salary" placeholder="Salary" required>
+        <textarea id="description" placeholder="Job Description" required></textarea>
+        <button type="submit">Post Job</button>
+    </form>
+<p id="message"></p>
+</div>
+
+<script src="scripting.js"></script>
+
+</body>
+</html>

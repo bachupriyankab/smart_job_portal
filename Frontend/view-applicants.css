@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("dashboard.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px;
+    color: white;
+}
+
+/* Soft dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* 🔥 Glass Card Style */
+.application-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 30px;
+    margin: 25px auto;
+    width: 85%;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-6px);
+}
+
+.application-card h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.application-card p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* Status colors */
+.status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status.Approved {
+    color: #22c55e;
+}
+
+.status.Rejected {
+    color: #ef4444;
+}
+
+.status.Pending {
+    color: #facc15;
+}
+
+/* Button Style Like Matching Page */
+.button-group {
+    margin-top: 15px;
+}
+
+.approve-btn,
+.reject-btn {
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+.approve-btn {
+    background: linear-gradient(45deg, #22c55e, #16a34a);
+    color: white;
+}
+
+.reject-btn {
+    background: linear-gradient(45deg, #ef4444, #dc2626);
+    color: white;
+}
+
+.approve-btn:hover,
+.reject-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Page Title */
+.page-title {
+    margin-top: 100px;
+    text-align: center;
+    color: #0b0b0b;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Applicant Cards */
+.job-card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.job-card span {
+    font-weight: bold;
+    color: #ffd166;
+}
+
+/* Approve Button */
+.approve-btn {
+    background: #28a745;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Reject Button */
+.reject-btn {
+    background: #dc3545;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Back Button
+.back-btn {
+    position: fixed;
+    right: 40px;
+    top: 90px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #243b55;
+    color: white;
+    cursor: pointer;
+ }
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+/* Left */
+.nav-left {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Center */
+.nav-center {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+/* Right */
+.nav-right {
+}
+
+/* Logout Button */
+.logout-btn {
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: none;
+    background: #ff4b5c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background: #ff1e38;
+}
+
+/* Header Row */
+.page-header {
+    margin-top: 100px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(12, 12, 12);
+}
+
+/* Title */
+.page-header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.back-btn {
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(135deg, #2767de,);
+    color: rgb(16, 15, 15);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}

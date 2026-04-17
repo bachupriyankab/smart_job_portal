@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Smart Job Portal</div>
+
+    <div class="welcome-center">
+        <span id="welcomeText"></span>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</header>
+
+<div class="profile-container">
+    <h2>Student Profile</h2>
+
+    <form id="profileForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="education" placeholder="Education">
+        <input type="text" id="skills" placeholder="Skills (comma separated)">
+        <input type="text" id="location" placeholder="Location">
+        <textarea id="about" placeholder="About you"></textarea>
+
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<script src="navbar.js"></script>
+<script src="student-profile.js"></script>
+
+</body>
+</html>

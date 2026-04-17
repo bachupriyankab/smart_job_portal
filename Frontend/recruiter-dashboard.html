@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="recruiter-dashboard.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        Smart Job Portal
+    </div>
+
+    <div class="nav-center">
+        <span id="welcomeText">Welcome 👋</span>
+    </div>
+
+    <div class="nav-right">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard-container">
+
+    <div class="card">
+        <div class="icon">📝</div>
+        <h2>Post Job</h2>
+        <p>Create new job opportunities and hire talented students.</p>
+        <button onclick="openPostJob()">Access</button>
+    </div>
+
+    <div class="card">
+        <div class="icon">📋</div>
+        <h2>Posted Jobs</h2>
+        <p>View and manage all the jobs you have posted.</p>
+        <button onclick="goToPostedJobs()">Access</button>
+    </div>
+
+    <div class="card">
+        <div class="icon">👥</div>
+        <h2>Student Applications</h2>
+        <p>Check students who applied for your job postings.</p>
+        <button onclick="goToApplications()">Access</button>
+    </div>
+
+    <div class="card">
+        <div class="icon">📅</div>
+        <h2>Interviews</h2>
+        <p>Schedule and manage interviews with candidates.</p>
+        <button class="coming-soon">Coming Soon</button>
+    </div>
+
+    <div class="card">
+        <div class="icon">👤</div>
+        <h2>My Profile</h2>
+        <p>View and update your recruiter profile information.</p>
+        <button onclick="openProfile()">Access</button>
+    </div>
+
+</div>
+
+<script src="recruiter-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Background with dark overlay */
+body {
+    background: url('skill_image.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Soft dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    background: #ff4d4d;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.logout-btn:hover {
+    background: #e60000;
+}
+
+/* CENTER CONTAINER */
+.dashboard-box {
+    position: relative;
+    z-index: 2;
+    width: 420px;
+    padding: 45px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.dashboard-box h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.9);
+}
+
+/* Search Button */
+.dashboard-box button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.dashboard-box button:hover {
+    transform: scale(1.03);
+}
+
+/* Job results */
+#jobContainer {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.result-message {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    text-align: center;
+}
+
+
+/* Individual selected tag */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    border: none;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #ffcccc !important;
+}
+
+/* Square style selected skills */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border-radius: 6px !important;   /* Square corners */
+    padding: 6px 12px !important;
+    margin: 4px 4px !important;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Navbar Buttons */
+.nav-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.job-description {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(20, 30, 48, 0.95);
+    color: white;
+    padding: 0 25px;
+    height: 60px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Welcome text center */
+.welcome-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Logout button */
+.logout-btn {
+    background: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}

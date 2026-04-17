@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Results</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <h3>🎉 Application Saved Successfully</h3>
+        <p>Thank you for applying!</p>
+
+        <div class="popup-buttons">
+            <button onclick="goBack()">Back to Jobs</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+</div>
+<body>
+<header class="navbar">
+    <div class="logo">Skill Job Portal</div>
+    <button onclick="goBack()" class="back-btn">← Back</button>
+</header>
+
+<div class="results-container">
+    <h2>Matching Jobs</h2>
+    <div id="jobContainer"></div>
+</div>
+
+<script src="results.js"></script>
+</body>
+</html>

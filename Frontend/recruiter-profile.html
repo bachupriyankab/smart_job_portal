@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Profile</title>
+    <link rel="stylesheet" href="recruiter-profile.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">Smart Job Portal</div>
+
+    <div class="nav-center">
+        <span id="welcomeText">Welcome</span>
+    </div>
+
+    <div class="nav-right">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div class="page-header">
+    <button  type ="button" class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<!-- PROFILE CARD -->
+<div class="profile-container">
+    <div class="profile-card">
+        <h2>Recruiter Information</h2>
+
+        <form id="profileForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <input type="text" id="experience" placeholder="Experience">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="project" placeholder="Current Working Project">
+            <textarea id="aboutProject" placeholder="About Project"></textarea>
+
+            <button type="submit">Save Profile</button>
+        </form>
+
+        <p id="profileMessage"></p>
+    </div>
+</div>
+
+<script src="recruiter-profile.js"></script>
+</body>
+</html>

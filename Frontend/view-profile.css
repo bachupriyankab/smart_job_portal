@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background: url('skill_image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: white;
+    margin: 120px auto;
+}
+
+.profile-card p {
+    margin: 10px 0;
+}
+
+.profile-card button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(20, 30, 48, 0.95);
+    color: white;
+    padding: 0 25px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Welcome text center */
+.welcome-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Logout button */
+.logout-btn {
+    background: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}

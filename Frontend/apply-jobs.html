@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Job Portal</title>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Select2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="apply-jobs.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Smart Job Portal</div>
+
+    <div class="nav-right">
+        <div class="welcome-center">
+        <span id="welcomeText"></span>
+    </div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="background"></div>
+
+<div class="dashboard-box">
+
+    <h2>Search Jobs 🔍</h2>
+    <p class="subtitle">Find opportunities matching your skills</p>
+
+    <div class="form-group">
+        <select id="role">
+            <option value="">Select Role</option>
+            <option>Software Engineer</option>
+	        <option>Software Developer</option>
+            <option>Full Stack Development</option>
+			<option>Backend Developer</option>
+			<option>Frontend Developer</option>
+			<option>Web Developer</option>
+			<option>Java Developer</option>
+			<option>Python Developer</option>
+			<option>Data Analyst</option>
+			<option>Machine Learning Engineer</option>
+			<option>DevOps Engineer</option>
+			<option>Cloud Engineer</option>
+			<option>UI / UX Designer</option>
+			<option>QA Engineer</option>
+			<option>Software Tester</option>
+			<option>Cyber Security Analyst</option>
+			<option>Business Analyst</option>
+			<option> Ethical Hacking</option>
+        </select>
+    </div>
+
+    
+
+    <div class="form-group">
+       <select id="skills" multiple="multiple">
+           <option>Java</option>
+			<option>Python</option>
+			<option>C</option>
+			<option>C++</option>
+			<option>SQL</option>
+			<option>MySQL</option>
+			<option>MongoDB</option>
+			<option>Node.js</option>
+			<option>Django</option>
+			<option>Spring Boot</option>
+			<option>React</option>
+			<option>Angular</option>
+			<option>Machine Learning</option>
+			<option> Web Development </option>
+			<option>Data Analysis</option>
+			<option>AWS</option>
+			<option>Azure</option>
+		    <option>Docker</option>
+			<option>Git</option>
+			<option>GitHub</option>
+			<option>HTML </option>
+            <option>CSS</option>
+			<option>JavaScript</option>
+        </select> 
+    </div> 
+
+    <div class="form-group">
+        <select id="company">
+            <option value="">Select Company</option>
+            <option>TCS</option>
+			<option>Infosys</option>
+			<option>Wipro</option>
+			<option>Accenture</option>
+			<option>IBM</option>
+			<option>Amazon</option>
+			<option>Microsoft</option>
+			<option>Google</option>
+			<option>Capgemini</option>
+			<option>Deloitte</option>
+			<option>Oracle</option>
+			<option>Cognizant</option>
+			<option>HCL</option>
+			<option>Zoho</option>
+			<option>Flipkart</option>
+        </select>
+    </div>
+
+    <button onclick="searchJobs()">Search</button>
+    <div id="resultMessage" class="result-message"></div>
+
+</div>
+
+<div id="jobContainer"></div>
+
+<script src="apply-jobs.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#skills').select2({
+        placeholder: "Select your skills",
+        width: "100%",
+        closeOnSelect: false
+    });
+});
+</script>
+
+</body>
+</html>

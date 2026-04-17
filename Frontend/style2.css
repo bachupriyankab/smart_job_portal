@@ -1,0 +1,123 @@
+/* Login Page Background */
+.login-body {
+   margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image:url("loginphoto.jpg"); 
+    background-size: cover;          /* fills entire screen */
+    background-position: center;     /* keeps image centered */
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Card */
+.login-container {
+    width: 380px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    text-align: center;
+    color: white;
+}
+
+.login-container h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #dcdcdc;
+}
+
+/* Form Group */
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* Input Styling */
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* Floating Label */
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    font-size: 14px;
+    color: #e0e0e0;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background: #2a5298;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+/* Password Eye Icon */
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    cursor: pointer;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #ff4b4b;
+}
+
+/* Error */
+.error {
+    color: #ffb3b3;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Signup Text */
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #ffd369;
+    text-decoration: none;
+    font-weight: bold;
+}

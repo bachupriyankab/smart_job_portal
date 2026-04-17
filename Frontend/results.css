@@ -1,0 +1,161 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image */
+body {
+    min-height: 100vh;
+    background: url('results-page-image.jpeg')
+    no-repeat center center/cover;
+    position: relative;
+}
+
+/* Dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.back-btn {
+    background: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Container */
+.results-container {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin: 60px auto;
+    color: white;
+}
+
+.results-container h2 {
+    margin-bottom: 30px;
+}
+
+/* Glass Job Card */
+.job-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Apply Button */
+.apply-btn {
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup-buttons button:first-child {
+    background: #4f46e5;
+    color: white;
+}
+
+.popup-buttons button:last-child {
+    background: #ff4d4d;
+    color: white;
+}
+
+.applications-container {
+    width: 80%;
+    margin: 120px auto;
+}
+
+.job-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+}
